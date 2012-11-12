@@ -16,7 +16,6 @@ body {
   margin: 0px auto;
 }
 header {
-  color: #000000;
   text-align: center;
 }
 a {
@@ -31,7 +30,7 @@ a {
   transition: all 0.4s ease;
 }
 a:hover {
-  color: #000000;
+  color: #002435;
 }
 ul {
   list-style: none;
@@ -43,14 +42,25 @@ ul a {
 b {
   font-weight: 700;
 }
+i {
+  font-size: 40px;
+  padding: 2px 5px 2px 5px;
+  text-shadow: 2px 2px 5px #999;
+}
+#social {
+  text-align: center;
+}
 h1 {
+  color: #00131b;
   font-family: 'Alfa Slab One', serif;
   font-size: 400%;
-  margin-bottom: 0%;
+  margin-bottom: 1%;
+  letter-spacing: 4px;
 }
 h2 {
   font-family: 'Alfa Slab One', serif;
-  font-size: 140%;
+  font-size: 150%;
+  margin-top: 1%;
   margin-bottom: -2%;
 }
 footer {
