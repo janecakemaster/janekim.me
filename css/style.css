@@ -1,0 +1,57 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+
+
+/*GLOBAL*/
+body {
+	color: #310045;
+  	font-family: 'Arvo', serif;
+    font-size: 14px;
+    background: #FFF9BA;
+    margin: 3px 65px 3px 65px;
+}
+p {
+	font-family: 'Arvo', serif;
+	font-size: 14px;
+    text-align: left;      
+    line-height: 17px;
+    margin: 2px 2px 2px 1px;
+}
+strong {
+    color: #1E004D;
+    font-size: 14px;
+    font-weight: 400;
+}      
+a {
+    color: #321461;
+    text-decoration: underline;
+}
+a:hover {
+    color: #321461;
+    text-decoration: none;
+}
+h1 {
+	color: #12003D;
+	font-family: 'Arvo', serif;
+    font-size: 70px;
+    font-weight: 700;
+	text-shadow: .5px .5px .5px #333;
+	margin: 15px 0 0 10px;
+
+}
+h2 {
+    color: #004668;
+	font-family: 'Arvo', serif;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 1px;
+}
+
+ul {
+	list-style-position:outside;
+	list-style-type:circle;
+}
+
+#main{
+	width: 670px;
+	margin: 10px auto 10px auto;
+}
