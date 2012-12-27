@@ -52,6 +52,9 @@ i {
 #social {
   text-align: center;
 }
+#about a {
+  font-size: 120%;
+}
 h1 {
   color: #00131b;
   font-family: 'Alfa Slab One', serif;
