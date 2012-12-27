@@ -1,4 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One|Bitter:400,700);
+/*
+	Jane Kim 2012 
+	janekim.me
+	made with LESS & CSS3 love 
+*/
 .alfa {
   font-family: 'Alfa Slab One', serif;
 }
@@ -52,6 +57,9 @@ i {
 #social {
   text-align: center;
 }
+#about {
+  position: ;
+}
 #about a {
   font-size: 110%;
   font-weight: 700;
@@ -73,5 +81,4 @@ footer {
   font-size: 0.6em;
   margin-top: 30px;
   bottom: 0;
-  position: absolute;
 }
