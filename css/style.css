@@ -69,7 +69,8 @@ h1 {
   font-family: 'Alfa Slab One', serif;
   font-size: 400%;
   margin-bottom: 1%;
-  letter-spacing: 4px;
+  text-shadow: 2px 2px 5px #999;
+
 }
 h2 {
   font-family: 'Alfa Slab One', serif;
