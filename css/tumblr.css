@@ -1,25 +1,20 @@
-@import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One|Bitter:400,700);
+@import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One|Bitter:400,700,400italic);
 /*
-	Jane Kim 2012 
-	janekim.me
-	made with LESS & CSS3 love 
+    Jane Kim 2012 
+  janekim.me
+  made with LESS & CSS3 love 
 */
-.alfa {
-  font-family: 'Alfa Slab One', Georgia, serif;
-}
-.bitter {
-  font-family: 'Bitter', Georgia, serif;
-}
+
 body {
-  background-image: url('../img/white_bed_sheet.png');
+  background-image: url('//janekim.me/img/white_bed_sheet.png');
   background-position: initial initial;
   background-repeat: initial initial;
   color: #004668;
-  font-size: 20px;
+  font-size: 13px;
   font-family: 'Bitter', Georgia, serif;
 }
 #container {
-  width: 67%;
+  width: 95%;
   margin: 0px auto;
 }
 header {
@@ -50,12 +45,8 @@ b {
   font-weight: 700;
 }
 i {
-  font-size: 40px;
-  padding: 2px 5px 2px 5px;
-  text-shadow: 2px 2px 5px #999;
-}
-#social {
-  text-align: center;
+  font-size: 24px;
+    text-shadow: 2px 2px 5px #999;
 }
 #about {
 }
@@ -67,8 +58,12 @@ h1 {
   color: #00131b;
   font-family: 'Alfa Slab One', Georgia, serif;
   font-size: 400%;
-  margin-bottom: 1%;
-  letter-spacing: 4px;
+  margin-bottom: -20px;
+
+}
+h1 a{
+      color: #00131b;
+
 }
 h2 {
   font-family: 'Alfa Slab One', Georgia, serif;
@@ -76,8 +71,25 @@ h2 {
   margin-top: 2%;
   margin-bottom: -2%;
 }
-footer {
-  font-size: 0.6em;
-  margin-top: 30px;
-  bottom: 0;
-}
+#footer {
+    position:fixed; 
+    bottom:0; 
+    right: 0;
+    margin:0; 
+    padding:10px 10px 5px 10px;
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(255, 255, 255) transparent;
+  /* RGBa */
+  background: rgba(255, 255, 255, 0.45);
+  /* For IE 5.5 - 7*/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF000000, endColorstr=#BF000000);
+  /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=white, endColorstr=white)";
+    text-align:center;
+    -o-box-shadow: 2px 3px 15px #888;
+    -icab-box-shadow: 2px 3px 15px #888;
+    -khtml-box-shadow: 2px 3px 15px #888;
+    -moz-box-shadow: 2px 3px 10px #888;
+    -webkit-box-shadow: 2px 3px 15px #888;
+    box-shadow: 2px 3px 15px #888;
+    }
