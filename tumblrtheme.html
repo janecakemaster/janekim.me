@@ -21,109 +21,10 @@
   {block:Description}<meta name="description" content="{MetaDescription}"/>{/block:Description}
   <link rel="shortcut icon" href="{Favicon}"/>
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}"/>
-  <link rel="stylesheet" href="//janekim.me/css/social_foundicons.css">
-  <style type="text/css">
-  @import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One|Bitter:400,700,400italic);
-  /*
-      Jane Kim 2012 
-    janekim.me
-    made with LESS & CSS3 love 
-  */
+  <link rel="stylesheet" href="http://janekim.me/css/social_foundicons.css">
+  <link rel="stylesheet" href="http://janekim.me/css/tumblr.css">
 
-  body {
-    background-image: url('//janekim.me/img/white_bed_sheet.png');
-    background-position: initial initial;
-    background-repeat: initial initial;
-    color: #004668;
-    font-size: 13px;
-    font-family: 'Bitter', Georgia, serif;
-  }
-  #container {
-    width: 95%;
-    margin: 0px auto;
-  }
-  #header {
-      margin-top: 40px;
-  }
-  i {
-    font-size: 24px;
-      text-shadow: 2px 2px 5px #999;
-  }
-  a {
-    color: #00689b;
-    font-style: normal;
-    font-weight: 400;
-    text-decoration: none;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -ms-border-radius: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-  }
-  a:hover {
-    color: #002435;
-  }
-  ul {
-    list-style: none;
-    padding-left: 5px;
-  }
-  ul a {
-    font-weight: 700;
-  }
-  b,strong {
-    font-weight: 700;
-  }
-  /* title in #header*/
-  span#title a{
-    color: #00131b;
-    font-family: 'Alfa Slab One', Georgia, serif;
-    font-size: 400%;
-    margin-bottom: -20px;
-    text-shadow: 2px 2px 5px #999;
-  }
-  #description{
-      margin-top: -14px;
-  }
-  /*post title, type, date*/
-  h2 {
-
-  }
-  #nav {
-      position:fixed; 
-      top: 0; 
-      left: 0;
-      margin:0; 
-      padding:10px 10px 5px 10px;
-      /* Fallback for web browsers that doesn't support RGBa */
-      background: rgb(255, 255, 255) transparent;
-    /* RGBa */
-    background: rgba(255, 255, 255, 0.45);
-    /* For IE 5.5 - 7*/
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF000000, endColorstr=#BF000000);
-    /* For IE 8*/
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=white, endColorstr=white)";
-      text-align:center;
-      -o-box-shadow: 2px 3px 15px #888;
-      -icab-box-shadow: 2px 3px 15px #888;
-      -khtml-box-shadow: 2px 3px 15px #888;
-      -moz-box-shadow: 2px 3px 10px #888;
-      -webkit-box-shadow: 2px 3px 15px #888;
-      box-shadow: 2px 3px 15px #888;
-      }
-  .icons {margin:0 2px;}
-
-  #search {position:fixed; bottom:0px; right: 0px;
-          font-size:10px; 
-          color:#e1e1e1;
-    text-align:left;}
-  form .submit {height:0; overflow:hidden; display:block;}
-  #credits{
-      font-size: 85%;
-  }
-</style>
-
-<script type="text/javascript" src="http://static.tumblr.com/q0etgkr/mFbkoqlkr/tumblrautopager.js"></script>
-
+  <script type="text/javascript" src="http://static.tumblr.com/q0etgkr/mFbkoqlkr/tumblrautopager.js"></script>
 
 </head>
 
@@ -132,9 +33,8 @@
     <div id="header">
       <span id="title"><a href="/">{Title}</a></span>
       <a href="http://twitter.com/janecakemaster"><i class="foundicon-twitter"></i></a>
-      <a href="http://github.com/janecakemaster"><i class="foundicon-github"></i></a>{block:Description}
-        <p id="description">{Description}</p>
-      {/block:Description}
+      <a href="http://github.com/janecakemaster"><i class="foundicon-github"></i></a>
+      <p id="description">{block:Description}{Description}{/block:Description}</p>
     </div>
 
     <ul id="posts">
@@ -213,7 +113,7 @@
     powered by <a class="credits" href="http://www.tumblr.com/">tumblr</a>. theme by <a class="credits" href="http://janekim.me">jane kim</a>
   </div>
 
-  <div id="nav">
+<!--   <div id="nav">
     <a class="icons" href="/"><img width="20px" src="http://janekim.me/img/home.png" title="back to top"></a>
     <a class="icons" href="/random"><img width="20px" src="http://janekim.me/img/shuffle.png" title="random post"></a>
     <a class="icons" href="/archive"><img width="20px" src="http://janekim.me/img/calendar.png" title="archive"></a>
@@ -221,7 +121,7 @@
     <a class="icons" href="{RSS}"><img width="20px" src="http://janekim.me/img/rss.png" title="rss"></a>
     <a class="icons" href="/mobile"><img width="20px" src="http://janekim.me/img/mobile.png" title="mobile"></a>
   </div>
-
+ -->
   <div id="search">
     <form action="/search" method="get">
       <input type="search" placeholder="search…" size="14" name="q" value="{SearchQuery}"/>&nbsp;

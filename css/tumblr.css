@@ -5,6 +5,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -17,7 +18,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video{
   margin: 0;
   padding: 0;
   border: 0;
@@ -27,24 +28,24 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section{
   display: block;
 }
-body {
+body{
   line-height: 1;
 }
-ol, ul {
+ol, ul{
   list-style: none;
 }
-blockquote, q {
+blockquote, q{
   quotes: none;
 }
 blockquote:before, blockquote:after,
-q:before, q:after {
+q:before, q:after{
   content: '';
   content: none;
 }
-table {
+table{
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -58,93 +59,87 @@ table {
 */
 @import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One|Bitter:400,700,400italic);
 
-body {
-    background-image: url('//janekim.me/img/white_bed_sheet.png');
-    background-position: initial initial;
-    background-repeat: initial initial;
-    color: #004668;
-    font-size: 13px;
-    font-family: 'Bitter', Georgia, serif;
-  }
-  #container {
-    width: 95%;
-    margin: 0px auto;
-  }
-  #header {
-      margin-top: 40px;
-  }
-  i {
-    font-size: 24px;
-      text-shadow: 2px 2px 5px #999;
-  }
-  a {
-    color: #00689b;
-    font-style: normal;
-    font-weight: 400;
-    text-decoration: none;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -ms-border-radius: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-  }
-  a:hover {
-    color: #002435;
-  }
-  ul {
-    list-style: none;
-    padding-left: 5px;
-  }
-  ul a {
-    font-weight: 700;
-  }
-  b,strong {
-    font-weight: 700;
-  }
-  /* title in #header*/
-  span#title a{
-    color: #00131b;
-    font-family: 'Alfa Slab One', Georgia, serif;
-    font-size: 400%;
-    margin-bottom: -20px;
-    text-shadow: 2px 2px 5px #999;
-  }
-  #description{
-      margin-top: -14px;
-  }
-  /*post title, type, date*/
-  h2 {
+body{
+  background-image: url('http://janekim.me/img/white_bed_sheet.png');
+  background-position: initial initial;
+  background-repeat: initial initial;
+  color: #004668;
+  font-family: 'Bitter', Georgia, serif;
+  font-size: 13px;
+}
+a{
+  color: #00689b;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-border-radius: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+a:hover{
+  color: #002435;
+}
+b,strong{
+  font-weight: 700;
+}
+/* social icons*/ 
+i{
+  font-size: 24px;
+  text-shadow: 2px 2px 5px #999;
+}
+ul{
+  list-style: disc;
+}
 
-  }
-  #nav {
-      position:fixed; 
-      top: 0; 
-      left: 0;
-      margin:0; 
-      padding:10px 10px 5px 10px;
-      /* Fallback for web browsers that doesn't support RGBa */
-      background: rgb(255, 255, 255) transparent;
-    /* RGBa */
-    background: rgba(255, 255, 255, 0.45);
-    /* For IE 5.5 - 7*/
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF000000, endColorstr=#BF000000);
-    /* For IE 8*/
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=white, endColorstr=white)";
-      text-align:center;
-      -o-box-shadow: 2px 3px 15px #888;
-      -icab-box-shadow: 2px 3px 15px #888;
-      -khtml-box-shadow: 2px 3px 15px #888;
-      -moz-box-shadow: 2px 3px 10px #888;
-      -webkit-box-shadow: 2px 3px 15px #888;
-      box-shadow: 2px 3px 15px #888;
-      }
-  .icons {margin:0 2px;}
+#container{
+  width: 90%;
+  margin: 0px auto;
+}
 
-  #search {position:fixed; bottom:0px; right: 0px;
-          font-size:10px; 
-          color:#e1e1e1;
-    text-align:left;}
-  form .submit {height:0; overflow:hidden; display:block;}
-  #credits{
-      font-size: 85%;
-  }
+#header{
+  margin: 40px 0 30px 0;
+}
+#title a{
+  color: #00131b;
+  font-family: 'Alfa Slab One', Georgia, serif;
+  font-size: 400%;
+  text-shadow: 2px 2px 5px #999;
+}
+#description{
+  margin-top: 1%;
+}
+
+ul#posts{
+  list-style: none;
+}
+.post{
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0 20px 0;
+}
+.date{
+  font-size: 120%;
+  padding-bottom: 10px;
+}
+h2{
+  font-size: 140%;
+  font-weight: 700;
+}
+
+#search{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  font-size: 10px;
+  color: #e1e1e1;
+  text-align: left;
+}
+form .submit{
+  height: 0;
+  overflow: hidden;
+  display: block;
+}
+#credits{
+    font-size: 85%;
+}
