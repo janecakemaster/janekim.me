@@ -23,6 +23,13 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}"/>
   <link rel="stylesheet" href="http://janekim.me/css/social_foundicons.css">
   <link rel="stylesheet" href="http://janekim.me/css/tumblr.css">
+  <style type="text/css">
+/*find me*/
+
+
+
+
+  </style>
 
   <script type="text/javascript" src="http://static.tumblr.com/q0etgkr/mFbkoqlkr/tumblrautopager.js"></script>
 
@@ -41,11 +48,12 @@
       
       {block:Posts}
       <li class="post" id="post{PostID}">
-        <a class="date" href="{Permalink}">{block:Date}{block:NewDayDate}{ShortDayOfWeek} {MonthNumberWithZero}.{DayOfMonthWithZero}.{Year}{/block:NewDayDate} {24Hour}:{Minutes}{/block:Date}</a>
 
         {block:Text}
           {block:Title}<h2><a title="{Title}" href="{Permalink}">{Title}</a></h2>{/block:Title}
-          <div class="caption">{Body}</div>
+          <div class="text">
+            <div class="caption">{Body}</div>
+          </div>
         {/block:Text}
 
         {block:Photo}
@@ -98,9 +106,11 @@
         <div class="info">
           {block:HasTags}{lang:Tags}: {block:Tags}<a href="{TagURL}" title="{lang:Posts tagged Tag}">{Tag}</a>{/block:Tags}{/block:HasTags}
           <br>
+          Posted <a href="{Permalink}">{block:Date}{block:NewDayDate}{ShortDayOfWeek} {Month} {DayOfMonth}, {Year}{/block:NewDayDate} {24Hour}:{Minutes}{/block:Date}</a><br>
           {block:RebloggedFrom}via <a href="{ReblogRootURL}" title="{ReblogRootTitle}">{ReblogRootTitle}</a>{/block:RebloggedFrom}{block:NoteCount} with <a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}
           <br>
           {block:ContentSource}{lang:Source}: <a href="{SourceURL}">{block:SourceLogo}<img src="{WhiteLogoURL}" width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" style="margin:0 0 0 5px; vertical-align:text-top;" />{/block:SourceLogo}{block:NoSourceLogo}{SourceTitle}{/block:NoSourceLogo}</a>{/block:ContentSource}
+          <br>
         </div>
 
         {block:PostNotes}<div id="notes">{PostNotes}</div>{/block:PostNotes}
