@@ -1,0 +1,441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <meta name="color:Container" content="#FFFFFF"/>
+  <meta name="color:Title" content="#000000"/>
+  <meta name="color:Text" content="#555555"/>
+  <meta name="color:Minor Text" content="#999999"/>
+  <meta name="color:Borders" content="#CCCCCC"/>
+  <meta name="color:Link" content="#4E66B4"/>
+  <meta name="color:Hover Link" content="#2E3B68"/>
+
+  <meta name="font:Heading" content="Helvetica Neue, Helvetica"/>
+  <meta name="font:Description" content="Helvetica Neue, Helvetica"/>
+  <meta name="font:Body" content="Helvetica Neue, Helvetica"/>
+  
+
+
+  <title>{Title}{block:PostSummary}: {PostSummary}{/block:PostSummary}</title>
+  {block:Description}<meta name="description" content="{MetaDescription}"/>{/block:Description}
+
+  <link rel="shortcut icon" href="{Favicon}"/>
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}"/>
+<link rel="stylesheet" href="//janekim.me/css/social_foundicons.css">
+  <style type="text/css">
+@import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One|Bitter:400,700,400italic);
+/*
+    Jane Kim 2012 
+  janekim.me
+  made with LESS & CSS3 love 
+*/
+
+body {
+  background-image: url('//janekim.me/img/white_bed_sheet.png');
+  background-position: initial initial;
+  background-repeat: initial initial;
+  color: #004668;
+  font-size: 13px;
+  font-family: 'Bitter', Georgia, serif;
+}
+#container {
+  width: 95%;
+  margin: 0px auto;
+}
+#header {
+    margin-top: 40px;
+}
+i {
+  font-size: 24px;
+    text-shadow: 2px 2px 5px #999;
+}
+a {
+  color: #00689b;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-border-radius: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+a:hover {
+  color: #002435;
+}
+ul {
+  list-style: none;
+  padding-left: 5px;
+}
+ul a {
+  font-weight: 700;
+}
+b,strong {
+  font-weight: 700;
+}
+/* title in #header*/
+span#title a{
+  color: #00131b;
+  font-family: 'Alfa Slab One', Georgia, serif;
+  font-size: 400%;
+  margin-bottom: -20px;
+  text-shadow: 2px 2px 5px #999;
+}
+#description{
+    margin-top: -14px;
+}
+/*post title, type, date*/
+h2 {
+
+}
+#nav {
+    position:fixed; 
+    top: 0; 
+    left: 0;
+    margin:0; 
+    padding:10px 10px 5px 10px;
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(255, 255, 255) transparent;
+  /* RGBa */
+  background: rgba(255, 255, 255, 0.45);
+  /* For IE 5.5 - 7*/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF000000, endColorstr=#BF000000);
+  /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=white, endColorstr=white)";
+    text-align:center;
+    -o-box-shadow: 2px 3px 15px #888;
+    -icab-box-shadow: 2px 3px 15px #888;
+    -khtml-box-shadow: 2px 3px 15px #888;
+    -moz-box-shadow: 2px 3px 10px #888;
+    -webkit-box-shadow: 2px 3px 15px #888;
+    box-shadow: 2px 3px 15px #888;
+    }
+.icons {margin:0 2px;}
+#ask{
+    color: black; 
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    line-height: 90%;
+    
+}
+
+</style>
+
+<script type="text/javascript" src="http://static.tumblr.com/q0etgkr/mFbkoqlkr/tumblrautopager.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="container">
+
+
+<div id="header">
+  <span id="title"><a href="/">{Title}</a></span>
+          <a href="http://twitter.com/janecakemaster"><i class="foundicon-twitter"></i></a>
+            <a href="http://github.com/janecakemaster"><i class="foundicon-github"></i></a>
+            
+
+<p>
+{block:Pages} 
+
+<a class="multi" href="{URL}">{Label}</a>
+
+{/block:Pages}
+</p>
+
+  {block:Description}<p id="description">
+    {Description}
+  </p>{/block:Description}
+
+</div>
+
+
+<ul id="posts">
+{block:Posts}
+  <li class="post" id="post{PostID}">
+
+    {block:Text}
+
+ <div class="meta">
+<div id="shadowbox">
+      <h2>
+<a title="link to this post" href="{Permalink}"><img width="30px" src="http://static.tumblr.com/qxaauuk/RPLkyl3xl/write-note.png"></a>
+      </h2>
+</div>
+
+{block:NewDayDate}
+          <a title="posts from this date"
+          href="/day/{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}"
+          class="day">
+        <span class="month">{MonthNumberWithZero}{DayOfMonthWithZero}{ShortYear}</span></a>
+        {/block:NewDayDate}
+
+
+    </div>
+
+    <div class="content text-post">
+      {block:Title}<h3><span>{Title}</span></h3>{/block:Title}
+
+      <div class="text">{Body}</div>
+    </div>
+    {/block:Text}
+
+    {block:Photo}
+
+<div class="meta">
+<div id="shadowbox">
+      <h2>
+<a title="link to this post" href="{Permalink}"><img width="30px" src="http://static.tumblr.com/qxaauuk/ygzkyl3mt/camera.png"></a>
+      </h2>
+</div>
+
+{block:NewDayDate}
+          <a title="posts from this date"
+          href="/day/{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}"
+          class="day">
+        <span class="month">{MonthNumberWithZero}{DayOfMonthWithZero}{ShortYear}</span></a>
+        {/block:NewDayDate}
+
+
+    </div>
+
+    <div class="content photo-post">
+      <div class="photo">
+        {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}
+      </div>
+
+      {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+    </div>
+    {/block:Photo}
+
+    {block:Quote}
+
+<div class="meta">
+<div id="shadowbox">
+      <h2>
+<a title="link to this post" href="{Permalink}"><img width="30px" src="http://static.tumblr.com/qxaauuk/Qgvkyl3i4/quote.png"></a>
+      </h2>
+</div>
+
+{block:NewDayDate}
+          <a title="posts from this date"
+          href="/day/{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}"
+          class="day">
+        <span class="month">{MonthNumberWithZero}{DayOfMonthWithZero}{ShortYear}</span></a>
+        {/block:NewDayDate}
+
+
+    </div>
+    <div class="content quote-post {Length}-quote">
+      <blockquote class="quote">{Quote}</blockquote>
+
+      {block:Source}<div class="source">&mdash;&#8194;{Source}</div>{/block:Source}
+    </div>
+    {/block:Quote}
+
+    {block:Link}
+
+<div class="meta">
+<div id="shadowbox">
+      <h2>
+<a title="link to this post" href="{Permalink}"><img width="30px" src="http://static.tumblr.com/qxaauuk/j4Vkyl3q1/earth.png"></a>
+      </h2>
+</div>
+
+{block:NewDayDate}
+          <a title="posts from this date"
+          href="/day/{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}"
+          class="day">
+        <span class="month">{MonthNumberWithZero}{DayOfMonthWithZero}{ShortYear}</span></a>
+        {/block:NewDayDate}
+
+
+    </div>
+    <div class="content link-post">
+      <h3 class="link"><a href="{URL}">{Name}</a></h3>
+
+      {block:Description}<div class="caption">{Description}</div>{/block:Description}
+    </div>
+    {/block:Link}
+
+    {block:Chat}
+
+<div class="meta">
+<div id="shadowbox">
+      <h2>
+<a title="link to this post" href="{Permalink}"><img width="30px" src="http://static.tumblr.com/qxaauuk/6FPkyl3v6/discussion.png"></a>
+      </h2>
+</div>
+
+{block:NewDayDate}
+          <a title="posts from this date"
+          href="/day/{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}"
+          class="day">
+        <span class="month">{MonthNumberWithZero}{DayOfMonthWithZero}{ShortYear}</span></a>
+        {/block:NewDayDate}
+
+
+    </div>
+
+    <div class="content chat-post">
+      {block:Title}<h3>{Title}</h3>{/block:Title}
+
+      <ol class="chat">
+        {block:Lines}<li class="{Alt} speaker{UserNumber}">
+          {block:Label}<span class="label">{Label}</span>{/block:Label}
+          <span class="line">{Line}</span>
+        </li>{/block:Lines}
+      </ol>
+    </div>
+    {/block:Chat}
+
+    {block:Video}
+
+<div class="meta">
+<div id="shadowbox">
+      <h2>
+<a title="link to this post" href="{Permalink}"><img width="30px" src="http://static.tumblr.com/qxaauuk/lIhkyl3u0/video-camera.png"></a>
+      </h2>
+</div>
+
+{block:NewDayDate}
+          <a title="posts from this date"
+          href="/day/{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}"
+          class="day">
+        <span class="month">{MonthNumberWithZero}{DayOfMonthWithZero}{ShortYear}</span></a>
+        {/block:NewDayDate}
+
+
+    </div>
+
+    <div class="content video-post">
+      <div class="video">{Video-400}</div>
+
+      {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+    </div>
+    {/block:Video}
+
+    {block:Audio}
+
+<div class="meta">
+<div id="shadowbox">
+      <h2>
+<a title="link to this post" href="{Permalink}"><img width="30px" src="http://static.tumblr.com/qxaauuk/2UBkyl3wh/volume-high.png"></a>
+      </h2>
+</div>
+
+{block:NewDayDate}
+          <a title="posts from this date"
+          href="/day/{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}"
+          class="day">
+        <span class="month">{MonthNumberWithZero}{DayOfMonthWithZero}{ShortYear}</span></a>
+        {/block:NewDayDate}
+
+
+    </div>
+    
+    <div class="content audio-post">
+      <div class="audio">{AudioPlayerGrey}</div>
+<p>plays: <span class="plays">{FormattedPlayCount}</span></p>
+
+      {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+    </div>
+    {/block:Audio}
+
+
+<div class="clear">&nbsp;</div>
+
+{block:HasTags}<p class="tags">
+        tags:
+        {block:Tags}&nbsp;<a class="" href="{TagURL}">{Tag}</a>&nbsp;{/block:Tags}
+      </p>{/block:HasTags}
+
+
+
+  </li>
+
+{/block:Posts}
+      
+</ol>
+
+
+
+  <div id="pagination">
+  {block:Pagination}
+    <p class="back">&nbsp;{block:NextPage}
+      <a href="{NextPage}">next</a> >>>
+    {/block:NextPage}</p>
+    <p class="forward">{block:PreviousPage}
+      <<< <a href="{PreviousPage}">prev</a>
+    {/block:PreviousPage}&nbsp;</p>
+    <p class="page">
+      page {CurrentPage} of {TotalPages}
+    </p>
+  {/block:Pagination}
+
+  {block:PermalinkPagination}
+    {block:PreviousPost}<p class="back">
+      <a href="{PreviousPost}">next</a> >>>
+    </p>{/block:PreviousPost}
+    {block:NextPost}<p class="forward">
+      <<< <a href="{NextPost}">prev</a>
+    {/block:NextPost}</p>
+  {/block:PermalinkPagination}
+
+  {block:DayPagination}
+    {block:PreviousDayPage}<p class="back">
+      <a href="{PreviousDayPage}">next</a> >>>
+    {/block:PreviousDayPage}</p>
+    {block:NextDayPage}<p class="forward">
+      <<< <a href="{NextDayPage}">prev</a>
+    </p>{/block:NextDayPage}
+  {/block:DayPagination}
+  </div>
+
+</div>
+
+<div id="search">
+<form action="/search" method="get">
+    <input type="search" placeholder="search…" size="14" name="q" value="{SearchQuery}"/>&nbsp;
+    <span class="submit"><input type="submit" value="Search"/></span>
+  </form>
+</div>
+
+
+  <div id="credits">
+    powered by <a class="credits" href="http://www.tumblr.com/">tumblr</a>
+<br>
+    theme by <a class="credits" href="http://prkrqnn.com/">parker quinn</a>
+</div>
+
+<div id="nav">
+
+
+
+
+    <a class="icons" href="/"><img width="20px" src="http://janekim.me/img/home.png" title="back to top"></a>
+
+<a class="icons" href="/random"><img width="20px" src="http://janekim.me/img/shuffle.png" title="random post"></a>
+
+    <a class="icons" href="/archive"><img width="20px" src="http://janekim.me/img/calendar.png" title="archive"></a>
+    
+<a class="icons" href="/ask"><img height="17px"  src="http://janekim.me/img/ask.png" title="ask"></a>
+
+<a class="icons" href="{RSS}"><img width="20px" src="http://janekim.me/img/rss.png" title="rss"></a>
+
+<a class="icons" href="/mobile"><img width="20px" src="http://janekim.me/img/mobile.png" title="mobile"></a>
+
+
+
+
+</div>
+
+
+
+</body>
+</html>
