@@ -110,7 +110,7 @@ ul{
 }
 #description{
   font-size: 125%;
-  margin-top: 1%;
+  margin-top: 3%;
 }
 
 ul#posts{
@@ -124,6 +124,9 @@ h2{
   font-size: 140%;
   font-weight: 700;
   margin-bottom: 20px;
+}
+.date{
+  padding-bottom: 10px;
 }
 
 .caption{
