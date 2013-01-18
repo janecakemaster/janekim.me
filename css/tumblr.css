@@ -133,6 +133,12 @@ h2{
     margin-bottom: 10px;
 }
 
+h2 .link{
+  font-size: 125%;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
 /* QUOTE */
 .short:before, .medium:before, .long:before, 
 .short:after, .medium:after, .long:after {
@@ -152,6 +158,10 @@ h2{
   font-size: 150%; 
   line-height: 120%;
   margin-bottom: 10px;
+}
+
+.info{
+  margin: 10px 0 10px 0;
 }
 
 #search{

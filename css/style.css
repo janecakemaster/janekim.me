@@ -20,10 +20,13 @@ body {
 }
 #container {
   width: 67%;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 header {
   text-align: center;
+}
+p{
+  line-height: 130%;
 }
 a {
   color: #00689b;
@@ -70,7 +73,6 @@ h1 {
   font-size: 400%;
   margin-bottom: 1%;
   text-shadow: 2px 2px 5px #999;
-
 }
 h2 {
   font-family: 'Alfa Slab One', serif;
