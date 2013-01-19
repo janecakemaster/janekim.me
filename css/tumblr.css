@@ -66,6 +66,9 @@ body{
   color: #004668;
   font-family: 'Bitter', Georgia, serif;
 }
+p{
+  margin-bottom: 10px;
+}
 a{
   color: #00689b;
   font-style: normal;
@@ -164,6 +167,10 @@ h2 .link{
 .info{
   margin: 10px 0 10px 0;
   text-align: right;
+}
+
+.tag{
+  margin-right: 5px;
 }
 
 #search{

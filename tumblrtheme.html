@@ -104,7 +104,7 @@
         <div class="clear">&nbsp;</div>
 
         <div class="info">
-          {block:HasTags}{lang:Tags}: {block:Tags}<a href="{TagURL}" title="{lang:Posts tagged Tag}">{Tag}</a>{/block:Tags}{/block:HasTags}
+          {block:HasTags}{lang:Tags}: {block:Tags}<a class="tag" href="{TagURL}" title="{lang:Posts tagged Tag}">{Tag}</a>{/block:Tags}{/block:HasTags}
           <br>
           Posted <a href="{Permalink}">{block:Date}{block:NewDayDate}{ShortDayOfWeek} {Month} {DayOfMonth}, {Year}{/block:NewDayDate} {24Hour}:{Minutes}{/block:Date}</a><br>
           {block:RebloggedFrom}via <a href="{ReblogRootURL}" title="{ReblogRootTitle}">{ReblogRootTitle}</a>{/block:RebloggedFrom}{block:NoteCount} with <a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}
