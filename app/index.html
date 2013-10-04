@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>jane kim</title>
+  <link rel="stylesheet" href="css/social_foundicons.css">
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a class="yellow" href="#/home" title="Home">jane kim</a></h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="#/portfolio" title="Portfolio">portfolio</a></li>
+          <li><a href="#/resume" title="Resume">resume</a></li>
+          <li>
+            <div class="social">
+              <a href="http://github.com/janecakemaster" title="GitHub"><i class="foundicon-github"></i></a>
+              <a href="http://linkedin.com/in/kimjane" title="LinkedIn"><i class="foundicon-linkedin"></i></a>
+              <a href="http://twitter.com/janecakemaster" title="Twitter"><i class="foundicon-twitter"></i></a>
+              <a href="https://foursquare.com/janecakemaster" title="Foursquare"><i class="foundicon-foursquare"></i></a>
+              <a href="http://instagram.com/janecakemaster/" title="Instagram"><i class="foundicon-instagram"></i></a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div ng-view class="content"></div>
+  </div>
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+-->
+<script src="lib/angular/angular.js"></script>
+<script src="js/app.js"></script>
+<script src="js/services.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/directives.js"></script>
+</body>
+</html>
