@@ -1,20 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Bevan);
 
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;vertical-align:baseline;font:inherit;font-size:100%;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}table{border-spacing:0;border-collapse:collapse;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;vertical-align:baseline;font:inherit;font-size:100%;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{height:  0;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}table{border-spacing:0;border-collapse:collapse;}
 
-/*
-  Jane Kim
-  janekim.me
-  */
-
-/*.yellow {
-  color: #FFC30D;
-}
-.blue {
-  color: #006;
-}
-*/
 body {
   background-image: url('../img/white_bed_sheet.png');
   background-position: initial initial;
@@ -35,17 +23,17 @@ body {
 }
 
 p {
-  line-height: 1.3em;
-  margin-bottom: 10px;
+  line-height: 1.4em;
+  font-size:  1.7em;
 }
 b, strong {
-    color: #006;
+  color: #006;
 
-    font-weight: 800;
+  font-weight: 800;
 
 }
 i {
-font-style: italic;
+  font-style: italic;
 }
 a,
 a:visited,
@@ -69,14 +57,15 @@ h1, h2 {
 
 h1 {
   text-shadow: 2px 2px 2px #616161;
-  font-size: 3em;
+  font-size: 5em;
   font-family: 'Bevan', serif;
-  line-height: 1.3em;
+  line-height: inherit;
 }
 
 .menu {
-  margin-top:  -10px;
-  margin-left:  26px;
+  margin-top: -5px;
+  margin-left: 40px;
+  font-size: 1.5em;
 }
 
 .menu > li {
@@ -94,9 +83,9 @@ h1 {
 }
 
 .social {
-  position:  absolute;
-  display:  inline-block;
-  margin-top:  1px;
+  position: absolute;
+  display: inline-block;
+  margin-top: 1px;
   text-align: center;
 }
 
@@ -105,6 +94,26 @@ h1 {
 }
 
 .content {
-  margin: 20px auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 5% auto;
+}
+
+.portfolio-div {
+  position: relative;
+  display: inline-block;
   overflow-x: scroll;
+  overflow-y: auto;
+  margin-top: 2%;
+  height: 650px;
+  white-space: nowrap;
+}
+
+.portfolio > li {
+  display: inline-block;
+  padding: 0 3% 0 3%;
+  width: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
 }
