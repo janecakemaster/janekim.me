@@ -23,8 +23,8 @@ body {
 }
 
 p {
-  line-height: 1.4em;
   font-size:  1.7em;
+  line-height: 1.4em;
 }
 b, strong {
   color: #006;
@@ -48,7 +48,7 @@ a:active {
 }
 
 a:hover {
-  opacity: 0.75;
+  opacity: 0.55;
 }
 
 h1, h2 {
@@ -96,7 +96,7 @@ h1 {
 .content {
   overflow-x: auto;
   overflow-y: hidden;
-  margin: 5% auto;
+  margin: 3% 0 0 0;
 }
 
 .portfolio-div {
@@ -105,7 +105,7 @@ h1 {
   overflow-x: scroll;
   overflow-y: auto;
   margin-top: 2%;
-  height: 650px;
+  height: 500px;
   white-space: nowrap;
 }
 
@@ -116,4 +116,8 @@ h1 {
   text-align: center;
   font-weight: bold;
   font-size: 1.5em;
+}
+
+.portfolio img {
+  height: 350px;
 }
