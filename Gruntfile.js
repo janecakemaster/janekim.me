@@ -9,7 +9,7 @@ module.exports = function(grunt) {
           style: 'compressed'
         },
         files: {
-          'dist/app.min.css': [
+          'app.min.css': [
             'node_modules/normalize.css/normalize.css',
             'src/sass/app.scss'
           ]
@@ -30,14 +30,14 @@ module.exports = function(grunt) {
     uglify: {
       build: {
         src: 'build/app.js',
-        dest: 'dist/app.min.js'
+        dest: 'app.min.js'
       }
     },
 
     copy: {
       main: {
         src: 'src/index.html',
-        dest: 'dist/index.html'
+        dest: 'index.html'
       }
     },
 
@@ -63,7 +63,6 @@ module.exports = function(grunt) {
       all: [
         '.sass-cache',
         'build',
-        'dist'
       ]
     }
 
