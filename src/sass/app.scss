@@ -1,2 +1,6 @@
-@import 'main';
-@import 'headers';
+@import "_main.scss";
+@import "_headers.scss";
+
+body {
+	background: red;
+}
