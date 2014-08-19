@@ -57,13 +57,14 @@ nav {
   ul {
     margin-bottom: 10px;
   }
-
-  .nav-item {
-    display: inline;
-    padding: 0 5px;
-    font-size: 4rem;
-  }
 }
+
+.nav-item {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 4rem;
+}
+
 
 .label {
   font-size: 1.75rem;
