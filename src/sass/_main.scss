@@ -40,14 +40,14 @@ li {
   font-size: 150px;
   font-weight: 900;
   text-align: center;
-  text-shadow: 0px 0px 1px $red, 1px 1px $red, 2px 2px $red, 3px 3px $red, 4px 4px $red;
+  text-shadow: 0 0 1px $red, 1px 1px $red, 2px 2px $red, 3px 3px $red, 4px 4px $red;
 
   @include transition(all 0.1s ease-in);
   visibility: hidden;
 
   &:hover {
     color: $red;
-    text-shadow: 0px 0px 0px $red;
+    text-shadow: 0 0 0 $red;
   }
 }
 
