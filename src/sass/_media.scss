@@ -1,0 +1,24 @@
+// Media Queries
+//-----------------------------
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .header {
+    margin-bottom: 3rem;
+    font-size: 18rem;
+    color: $red;
+  }
+
+  nav {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .nav-item {
+    font-size: 10rem;
+    padding: 5px 30px;
+  }
+
+  .label {
+    display: none;
+  }
+}
