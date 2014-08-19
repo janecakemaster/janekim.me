@@ -10,7 +10,7 @@ module.exports = function(grunt) {
         cwd: 'src/sass/',
         src: ['*.scss'],
         dest: './',
-        ext: '.min.css'
+        ext: '.css'
       },
       dev: {
         options: {
@@ -98,7 +98,8 @@ module.exports = function(grunt) {
     },
 
     clean: {
-      dist: [ '.sass-cache', 'build', 'app.js', 'app.css'],
+      // dist: [ '.sass-cache', 'build', 'app.js', 'app.css'],
+      dist: [ '.sass-cache', 'build', 'app.js' ],
       all: [ '.sass-cache', 'build', 'app.*']
     }
   });
