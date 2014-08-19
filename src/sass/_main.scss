@@ -1,4 +1,73 @@
+// Main
+//-----------------------------
+
 body {
-	color: #000;
-	font-size: 14px;
+  background: #fff;
+  background-image: url("http://subtlepatterns.com/patterns/subtle_dots.png");
+  background-attachment: fixed;
+  color: $black;
+  font-size: 14px;
+  line-height: 1.1;
+  font-family: "Open Sans", "Helvetica", sans-serif;
+}
+
+a,
+a:visited,
+a:focus,
+a:active {
+  color: $blue;
+  text-decoration: none;
+
+  @include transition(all 0.2s ease-in);
+
+  &:hover {
+    color: darken($blue, 10%);
+  }
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  top: -4px;
+  left: -4px;
+  margin-bottom: 2rem;
+
+  color: #fff;
+  font-family: "Source Sans Pro", "Helvetica", sans-serif;
+  font-size: 150px;
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 0px 0px 1px $red, 1px 1px $red, 2px 2px $red, 3px 3px $red, 4px 4px $red;
+
+  @include transition(all 0.1s ease-in);
+  visibility: hidden;
+
+  &:hover {
+    color: $red;
+    text-shadow: 0px 0px 0px $red;
+  }
+}
+
+nav {
+  text-align: center;
+
+  ul {
+    margin-bottom: 10px;
+  }
+
+  .nav-item {
+    display: inline;
+    padding: 0 5px;
+    font-size: 4rem;
+  }
+}
+
+.label {
+  font-size: 1.75rem;
+  color: darken($blue, 10%);
 }
