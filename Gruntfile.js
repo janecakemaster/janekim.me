@@ -3,9 +3,9 @@ module.exports = function(grunt) {
   grunt.initConfig({
     sass: {
       dist: {
-        options: {
-          style: 'compressed'
-        },
+        // options: {
+        //   style: 'compressed'
+        // },
         expand: true,
         cwd: 'src/sass/',
         src: ['*.scss'],
@@ -69,7 +69,7 @@ module.exports = function(grunt) {
         dest: 'index.html',
         replacements: [
         { from: 'app.js', to: 'app.min.js' },
-        { from: 'app.css', to: 'app.min.css' }
+        // { from: 'app.css', to: 'app.min.css' }
         ]
       }
     },
