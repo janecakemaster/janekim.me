@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: 'src/sass/',
         src: ['*.scss'],
-        dest: './',
+        dest: 'dist/',
         ext: '.min.css'
       },
       dev: {
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: 'src/sass/',
         src: ['*.scss'],
-        dest: './',
+        dest: 'dist/',
         ext: '.css'
       }
     },
@@ -40,6 +40,7 @@ module.exports = function(grunt) {
       main: {
         files: [
         { src: 'src/index.html', dest: 'index.html' },
+        { src: 'src/resume.html', dest: 'resume/index.html' },
         { expand: true, cwd: 'node_modules/font-awesome/fonts', src: '*', dest: 'fonts/' }
         ]
       }
@@ -59,7 +60,7 @@ module.exports = function(grunt) {
     uglify: {
       build: {
         src: 'build/app.js',
-        dest: 'app.min.js'
+        dest: 'dist/app.min.js'
       }
     },
 
@@ -68,8 +69,8 @@ module.exports = function(grunt) {
         src: ['src/index.html'],
         dest: 'index.html',
         replacements: [
-        { from: 'app.js', to: 'app.min.js' },
-        { from: 'app.css', to: 'app.min.css' }
+          { from: 'app.js', to: 'app.min.js' },
+          { from: 'home.css', to: 'home.min.css' }
         ]
       }
     },
@@ -86,14 +87,9 @@ module.exports = function(grunt) {
       html: {
         files: ['src/**/*.html'],
         tasks: ['copy']
-      }
-    },
-
-    connect: {
-      server: {
-        options: {
-          port: 8080
-        }
+      },
+      options: {
+        livereload: true
       }
     },
 
@@ -116,7 +112,5 @@ grunt.loadNpmTasks('grunt-contrib-connect');
 
 grunt.registerTask('default', ['clean:all', 'sass:dist', 'jshint', 'concat:dist', 'uglify', 'replace', 'clean:dist']);
 grunt.registerTask('dev', ['clean:all', 'sass:dev', 'jshint', 'concat:dev', 'copy']);
-
-grunt.registerTask('serve', ['dev', 'connect', 'watch']);
 
 };
