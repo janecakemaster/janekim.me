@@ -1,4 +1,3 @@
-janecakemaster.github.com
+janekim.me
 =========================
-
-get to know me here. built on sass, grunt, and github pages. 
+personal page. it's got stuff
