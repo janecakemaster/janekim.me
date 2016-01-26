@@ -4,14 +4,17 @@ const favicon = require('serve-favicon');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-const hbs = require('hbs');
+const exphbs  = require('express-handlebars');
 
 const app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.engine('hbs', exphbs({
+  defaultLayout: 'main',
+  extname: '.hbs'
+}));
 app.set('view engine', 'hbs');
-hbs.registerPartials(__dirname + '/views/partials');
+
 
 // uncomment after placing your favicon in /public
 // app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -55,6 +58,7 @@ if (app.get('env') === 'development') {
 app.use((err, req, res, next) => {
   res.status(err.status || 500);
   res.render('error', {
+    layout: false,
     message: err.message,
     error: {}
   });
