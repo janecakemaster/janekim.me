@@ -75,9 +75,14 @@ gulp.task('watch', function() {
   gulp.watch('./views/*', reload);
 });
 
-gulp.task('default', [
+gulp.task('dev', [
   'watch',
   'scripts',
   'styles',
   'browser-sync',
+]);
+
+gulp.task('default', [
+  'scripts',
+  'styles',
 ]);
