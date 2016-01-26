@@ -1,3 +1,3 @@
-janekim.me
-=========================
-personal page. it's got stuff
+# janekim.me
+
+yo this shit is dope

@@ -1,0 +1,19 @@
+{
+  // http://eslint.org/docs/rules/
+
+  "ecmaFeatures": {
+    "arrowFunctions": true,                     // enable arrow functions
+    "blockBindings": true,                      // enable let and const (aka block bindings)
+    "defaultParams": false,                     // enable default function parameters
+    "destructuring": true,                      // enable destructuring
+    "objectLiteralShorthandMethods": true,      // enable object literal shorthand methods
+    "objectLiteralShorthandProperties": true,   // enable object literal shorthand properties
+    "restParams": true,                         // enable the rest parameters
+    "spread": true,                             // enable the spread operator
+    "templateStrings": true,                    // enable template strings
+  },
+
+  "plugins": [
+    "standard"
+  ],
+}

@@ -6,7 +6,7 @@ body {
   color: $black;
   font-size: 14px;
   line-height: 1.1;
-  font-family: "Open Sans", "Helvetica", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
 }
 
 a,
@@ -15,11 +15,10 @@ a:focus,
 a:active {
   color: $blue;
   text-decoration: none;
-
-  @include transition(all 0.2s ease-in);
+  transition: color .2s ease-in;
 
   &:hover {
-    color: darken($blue, 10%);
+    color: darken($blue, 30%);
   }
 }
 
