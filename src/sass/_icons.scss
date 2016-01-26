@@ -1,0 +1,35 @@
+$size: 80px;
+
+.icon {
+  display: inline-block;
+  width: $size;
+  height: $size;
+}
+
+/* =======================================================================================
+Example showing how to change the color/size of the icons:
+.icon-name {
+  font-size: 32px; // works because "width" & "height" were set using em units
+  color: red; // works for single-colored icons, because "fill" was set to "currentColor"
+}2
+======================================================================================== */
+
+// .icon-pencil-square {
+//   width: .857421875rem;
+// }
+
+// .icon-envelope-square {
+//   width: .857421875rem;
+// }
+
+// .icon-vimeo-square {
+//   width: .857421875rem;
+// }
+
+// .icon-github-square {
+//   width: .857421875rem;
+// }
+
+// .icon-twitter-square {
+//   width: .857421875rem;
+// }

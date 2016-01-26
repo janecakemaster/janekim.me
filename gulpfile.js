@@ -53,13 +53,13 @@ gulp.task('scripts', () => {
 });
 
 gulp.task('styles', () => {
-  return gulp.src(sassPaths.src)
+  return gulp.src([ sassPaths.src, '!./src/sass/_normalize.scss'])
     .pipe(sassLint())
     .pipe(sassLint.format())
     .pipe(sassLint.failOnError())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({browsers: ['last 2 versions']}))
-    .pipe(rename({basename: 'app', suffix: '.min'}))
+    .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
     .pipe(gulp.dest(sassPaths.dest))
     .pipe(browserSync.stream());
@@ -72,7 +72,7 @@ gulp.task('clean', cb => {
 gulp.task('watch', function() {
   gulp.watch(jsPaths.src, ['scripts']);
   gulp.watch(sassPaths.src, ['styles']);
-  gulp.watch('./views', reload);
+  gulp.watch('./views/*', reload);
 });
 
 gulp.task('default', [

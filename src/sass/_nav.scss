@@ -1,0 +1,39 @@
+nav {
+  text-align: center;
+
+  ul {
+    margin-bottom: 10px;
+  }
+
+  &:hover {
+    .label {
+      visibility: visible;
+    }
+  }
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 10px 15px;
+
+  svg {
+    fill: $blue;
+    transition: fill .2s ease-in;
+
+    &:hover {
+      fill: darken($blue, 20%);
+    }
+  }
+
+  &.selected {
+    svg {
+      fill: darken($blue, 20%);
+    }
+  }
+}
+
+.label {
+  visibility: hidden;
+  font-size: 1.75rem;
+  color: darken($blue, 20%);
+}

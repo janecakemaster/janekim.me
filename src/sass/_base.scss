@@ -1,0 +1,30 @@
+// Main
+//-----------------------------
+
+body {
+  background: #fff;
+  color: $black;
+  font-size: 14px;
+  line-height: 1.1;
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
+}
+
+a,
+a:visited,
+a:focus,
+a:active {
+  color: $blue;
+  text-decoration: none;
+  transition: color .2s ease-in;
+
+  &:hover {
+    color: darken($blue, 30%);
+  }
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
