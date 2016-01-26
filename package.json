@@ -1,22 +1,49 @@
 {
   "name": "janekim.me",
-  "version": "1.0.0",
-  "description": "my personal site",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "0.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/janecakemaster/janekim.me.git"
   },
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "DEBUG=janekim.me:* nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cookie-parser": "^1.4.1",
+    "debug": "^2.2.0",
+    "express": "^4.13.4",
+    "hbs": "^4.0.0",
+    "morgan": "^1.6.1",
+    "node-sass-middleware": "^0.9.7",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13",
+    "browser-sync": "^2.11.1",
+    "eslint-plugin-standard": "^1.3.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-eslint": "^1.1.1",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-sass-lint": "^1.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1"
+  },
+  "description": "yo this shit is dope",
+  "bugs": {
+    "url": "https://github.com/janecakemaster/janekim.me/issues"
+  },
+  "homepage": "https://github.com/janecakemaster/janekim.me#readme",
+  "main": "app.js",
   "keywords": [
     "personal"
   ],
   "author": "Jane Kim <jane@janekim.me>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/janecakemaster/janekim.me/issues"
-  },
-  "homepage": "https://github.com/janecakemaster/janekim.me#readme"
+  "license": "ISC"
 }
