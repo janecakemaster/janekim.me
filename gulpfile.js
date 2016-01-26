@@ -3,7 +3,7 @@ const chalk = require('chalk');
 const sass = require('gulp-sass');
 const sassLint = require('gulp-sass-lint');
 const autoprefixer = require('gulp-autoprefixer');
-const minifycss = require('gulp-minify-css');
+const cssnano = require('gulp-cssnano');
 const eslint = require('gulp-eslint');
 const rename = require('gulp-rename');
 const babel = require('gulp-babel');
@@ -60,7 +60,7 @@ gulp.task('styles', () => {
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({browsers: ['last 2 versions']}))
     .pipe(rename({suffix: '.min'}))
-    .pipe(minifycss())
+    .pipe(cssnano())
     .pipe(gulp.dest(sassPaths.dest))
     .pipe(browserSync.stream());
 });
