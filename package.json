@@ -10,7 +10,7 @@
     "dev": "DEBUG=janekim.me:* nodemon ./bin/www"
   },
   "dependencies": {
-    "body-parser": "^1.14.2",
+    "body-parser": "^1.17.0",
     "cookie-parser": "^1.4.1",
     "debug": "^2.2.0",
     "express": "^4.13.4",
